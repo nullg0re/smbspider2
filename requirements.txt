@@ -1,0 +1,6 @@
+futures
+argparse
+Queue
+threading
+pysmb
+colorama

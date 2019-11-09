@@ -121,7 +121,7 @@ def get_ips(iparg):
 	return ips
 
 def main():
-	parser = argparse.ArgumentParser(description="SMB Spider for PS1 Scripts")
+	parser = argparse.ArgumentParser(description="SMB Spider for Potentially Sensitve Files. I.E Powershell Scripts, KeePass Databases, and files that contain \"password\" in the filename.")
 	parser.add_argument('-ip','--ipaddress',help='ip address',required=True)
 	parser.add_argument('-u','--user',help='user',required=True)
 	parser.add_argument('-p','--pwd',help='password',required=True)

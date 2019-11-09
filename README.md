@@ -7,11 +7,11 @@ Currently this script looks for *.ps1 *.kdb *.kdbx and and filenames containing 
 
 # Help Menu
 ```
-# ./smbspider2.py -h
-usage: smbspider2.py [-h] -ip IPADDRESS -u USER -p PWD -d DOMAIN
-                             [-t THREADS]
+# ./smbspider2.py --help
+usage: smbspider2.py [-h] -ip IPADDRESS -u USER -p PWD -d DOMAIN [-t THREADS]
 
-SMB Spider for PS1 Scripts
+SMB Spider for Potentially Sensitve Files. I.E Powershell Scripts, KeePass
+Databases, and files that contain "password" in the filename.
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -26,7 +26,7 @@ optional arguments:
 ```
 # Example Usage:
 ```
-# ./portscan-smbspider.py -ip 172.16.6.0/24 -u testuser1 -p Summer2019 -d tgore.com -t 100
+# ./smbspider2.py -ip 172.16.6.0/24 -u testuser1 -p Summer2019 -d tgore.com -t 100
 [*] Scanning Port 445 on host 172.16.6.1
  [*] Scanning Port 445 on host 172.16.6.2
 [*] Scanning Port 445 on host 172.16.6.3
